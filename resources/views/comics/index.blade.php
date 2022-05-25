@@ -13,7 +13,7 @@
                     <img src="{{ $item->thumb }}" alt="{{ $item->title }}">
                     <h3> <a href="{{ route('comics.show', $item->id) }}">{{ $item->title }}</a></h3>
                     {{-- <p>{{ $item->description }}</p> --}}
-                    <p>Price: {{ $item->price }}</p>
+                    <p>Price: {{ $item->price }} $</p>
                     <p>Sales: {{ $item->sale_date }}</p>
                 </div>
 
