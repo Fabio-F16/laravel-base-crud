@@ -14,5 +14,6 @@
             <h5>Price: {{ $comic->price }} $</h5>
         </div>
         <a href="{{ route('comics.index') }}">Torna alla lista dei fumetti!</a>
+
     </div>
 @endsection
