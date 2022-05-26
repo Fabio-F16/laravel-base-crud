@@ -4,6 +4,7 @@
     laravel-base-crud
 @endsection
 
+<a href="{{ route('comics.create') }}">Add new record</a>
 
 @section('content')
     <div class="container">
