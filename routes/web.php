@@ -17,5 +17,13 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+// per visualizzarla al riavvio, quando sono in / mi reindirizza a comics.index
+Route::get('/', function () {
+
+    return redirect()->route('comics.index');
+
+});
+
+
 
 Route::resource('comics', 'ComicController');
