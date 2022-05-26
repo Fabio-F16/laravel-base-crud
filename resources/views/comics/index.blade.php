@@ -6,6 +6,7 @@
 
 <a href="{{ route('comics.create') }}">Add new record</a>
 
+
 @section('content')
     <div class="container">
         <div class="row">
@@ -16,6 +17,7 @@
                     {{-- <p>{{ $item->description }}</p> --}}
                     <p>Price: {{ $item->price }} $</p>
                     <p>Sales: {{ $item->sale_date }}</p>
+                    <a href="{{ route('comics.edit', $item->id) }}">Edit record</a>
                 </div>
 
             @empty
