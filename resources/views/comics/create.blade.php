@@ -51,8 +51,10 @@
                     <input class="col-4" type="text" name="type">
                 </div>
 
-                <input type="submit" value="Invia">
+                <input class="mb-4" type="submit" value="Invia">
             </form>
+
         </div>
+        <a class="m-4" href="{{ route('comics.index') }}">Torna alla lista dei fumetti!</a>
     </div>
 @endsection
