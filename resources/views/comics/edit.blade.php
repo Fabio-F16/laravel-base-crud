@@ -57,5 +57,11 @@
 
         </div>
         <a class="m-4" href="{{ route('comics.index') }}">Torna alla lista dei fumetti!</a>
+
+        <form action="{{ route('comics.destroy', $comic->id) }}" method="post">
+            @csrf
+            @method('delete')
+            <input type="submit" value="cancella record">
+        </form>
     </div>
 @endsection
